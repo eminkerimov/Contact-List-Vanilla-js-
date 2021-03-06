@@ -1,0 +1,157 @@
+
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,74,1) 35%, rgba(0,212,255,1) 100%);
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Sans MS",cursive,sans-serif;
+}
+
+h1{
+    color: #aaf8c9;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 48px;
+    letter-spacing: -1px; 
+    text-transform: uppercase; 
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    line-height: 50px;
+}
+.table-container{
+    font-size: 20px;
+    margin-top: 35px;
+    width: 95%;
+    margin:auto;
+}
+.table-row{
+    display: flex;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.table-col{
+    margin: 2px;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+    background-color: #74e2e7;
+    color: darkblue;
+}
+
+.header .table-col {
+    background-color: darkblue;
+    color: orange;
+}
+
+.table-body {
+    font-size: 15px;
+}
+
+.contact-id {
+    flex-basis: 3%;
+}
+
+.contact-name,.contact-number {
+    flex-basis: 10%;
+}
+
+.contact-address,.contact-create, .contact-edit {
+    flex-basis: 15%;
+}
+
+.add-btn, .edit-btn, .delete-btn{
+    flex-basis: 3%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#layout{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 50;
+    top: 0;
+    left: 0;
+}
+
+.disable-modal, .disable-modal-new, .disable-modal-edit{
+    visibility: hidden;
+}
+
+.enable-modal, .enabel-modal-new, .enable-modal-edit{
+    visibility: visible;
+}
+
+#newPersonModal, #editPersonModal{
+    width: 500px;
+    padding: 10px;
+    border:2px solid black;
+    border-radius: 30px;
+    z-index: 99;
+    top: 50px;
+    position: absolute;
+    margin-left:35%;
+    background-color: rgb(54,163,236);
+}
+
+#newPersonModal input, #editPersonModal input{
+    display: block;
+    margin:10px auto;
+    padding: 10px;
+    border: 5px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+#newPersonModal label, #editPersonModal label {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.input-err{
+    background-color: red;
+}
+
+#submit-new-btn,  #submit-edit-btn{
+    background-color: rgb(21, 151, 9);
+    margin-top: 20px;
+}
+
+#cancel-edit-btn, #cancel-new-btn {
+    background-color: rgb(151, 47, 47);
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+button{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    transform: translateY(-3px);
+    outline:none;
+    border:none;
+}
+
+button:focus {
+    color: #fff;
+    transform: translateY(-3px);
+    outline:none;
+    border:none;
+}
+
+input:focus {
+    outline: none;
+}
